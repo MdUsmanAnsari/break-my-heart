@@ -70,7 +70,7 @@ const getRandomAnimation = (index) => {
 };
 
 const heartBlust = () => {
-  text.innerHTML = "😒 You're so bad you have broke my heart 💔 😭😭";
+  text.innerHTML = "😒 You're so bad you have broken my heart 💔 😭😭";
   const index = getRandom(6);
   heartItem.forEach((item) => {
     item.style.cssText = getRandomAnimation(index);
