@@ -70,6 +70,7 @@ const getRandomAnimation = (index) => {
 };
 
 const heartBlust = () => {
+  text.innerHTML = "😒 You're so bad you have broke my heart 💔 😭😭";
   const index = getRandom(6);
   heartItem.forEach((item) => {
     item.style.cssText = getRandomAnimation(index);
@@ -95,7 +96,6 @@ const heartArrange = () => {
 
 heart.addEventListener("click", () => {
   heartBlust();
-  text.innerHTML = "😒 You're so bad you have broke my heart 💔 😭😭";
 });
 
 btnRound.addEventListener("click", setCurrentSelectedBtn);
